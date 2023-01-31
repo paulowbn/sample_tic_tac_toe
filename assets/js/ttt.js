@@ -36,8 +36,6 @@ function checkWin() {
     const textC = cells[c].querySelector("p").textContent;
 
     if (textA === textB && textB === textC && textA !== "") {
-      document.getElementById("modal").style.display = 'flex';
-      document.getElementById("modalAviso").textContent = "Jogador " + textA + " venceu o jogo!";
       if (textA === "X") {
         placarX += 1;
         document.getElementById("placarX").setAttribute("value", placarX)
@@ -45,6 +43,8 @@ function checkWin() {
         placarO += 1;
         document.getElementById("placarO").setAttribute("value", placarO)
       }
+      document.getElementById("modal").style.display = 'flex';
+      document.getElementById("modalAviso").textContent = "Jogador " + textA + " venceu o jogo!";
     }
   }
 }
