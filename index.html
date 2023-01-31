@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <ul class="nav nav-tabs d-flex d-xl-flex justify-content-center justify-content-xl-center">
+        <li class="nav-item" style="margin-right: 20px;"><img src="assets/img/885804_console_512x512.png" style="width: 42px;height: 42px;"></li>
+        <li class="nav-item"><a class="nav-link active" href="#">TTT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank">Creator</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Instagram</a></li>
+    </ul>
+    <div class="d-grid">
+        <div class="d-flex justify-content-center justify-content-md-center" style="margin-top: 20px;">
+            <div style="display: flex;"><span style="display: flex;margin-right: 20px;">X:</span><input id="placarX" type="text" style="margin-right: 20px;width: 53.8px;" readonly="" value="0"></div>
+            <div style="display: flex;"><span style="display: flex;margin-right: 20px;">O:</span><input id="placarO" type="text" style="width: 53.8px;" readonly="" value="0"></div>
+        </div>
+        <div class="d-flex d-sm-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center">
+            <div class="justify-content-xl-center tic-tac-toe" style="width: 300px;height: 300px;display: flex;flex-wrap: wrap;margin-top: 30px;">
+                <div class="d-flex row-ttt" style="width: 100%;">
+                    <div class="cell-ttt" style="flex: 1;">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div class="cell-ttt" style="flex: 1;border-right-width: 2.4px;border-right-style: solid;border-left-style: solid;">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div class="cell-ttt" style="flex: 1;">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                </div>
+                <div class="d-flex row-ttt" style="width: 100%;">
+                    <div style="border-top-style: solid;border-bottom-style: solid;" class="cell-ttt">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div class="d-xxl-flex cell-ttt" style="border-style: solid;">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div class="cell-ttt" style="border-top-style: solid;border-bottom-style: solid;">
+                        <p class="fw-bold" style="margin-bottom: 0px;"></p>
+                    </div>
+                </div>
+                <div class="d-flex row-ttt" style="width: 100%;">
+                    <div class="cell-ttt">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div style="flex: 1;border-right-width: 2.4px;border-right-style: solid;border-left-style: solid;" class="cell-ttt">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                    <div class="cell-ttt">
+                        <p class="fw-bold label-ttt" style="margin-bottom: 0px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center justify-content-xl-center justify-content-xxl-center" style="margin-top: 30px;"><button class="btn btn-primary" id="btnReset" type="button" style="display: flex;">Reiniciar</button></div>
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col-lg-12 col-xl-12" style="border-style: none;">
+                    <p class="text-muted my-2" style="font-size: 14px;">Copyright&nbsp;© 2023 Paulo Braga</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="modal">
+        <span id="modalAviso">Aviso</span>
+        <span id="modalBotao">Reiniciar</span>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/ttt.js"></script>
+</body>
+
+</html>
